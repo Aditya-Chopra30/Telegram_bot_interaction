@@ -1,16 +1,15 @@
 from telethon.sync import TelegramClient
 
-# Your API ID and hash
-api_id = '22217088'
-api_hash = 'f331334dbd9057c54803742a5d248e9f'
+api_id = '*******' # use your api id 
+api_hash = '******************************' # use your api hash 
 
 # User ID of the recipient
-user_id = 'edi_me'
+user_id = '****'
 
-# Message to send
-message = 'Hello, this is a test message from my Telegram bot!'
+Message to send
+message = 'hello, this is a test message from my Telegram bot!'
 
-# Create a TelegramClient instance
+# creating a TelegramClient instance
 client = TelegramClient('session_name', api_id, api_hash)
 
 async def main():
@@ -18,7 +17,7 @@ async def main():
     await client.start()
 
     try:
-        # Send the message to the recipient
+        # Sending the message to the recipient
         await client.send_message(user_id, message)
         print("Message sent successfully!")
     except Exception as e:
@@ -27,6 +26,6 @@ async def main():
         # Disconnect from Telegram
         await client.disconnect()
 
-# Run the main function
+#  main function
 with client:
     client.loop.run_until_complete(main())
