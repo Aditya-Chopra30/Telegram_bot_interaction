@@ -2,14 +2,14 @@ from telethon.sync import TelegramClient
 from telethon import events
 
 # Your API ID and hash
-api_id = '22217088'
-api_hash = 'f331334dbd9057c54803742a5d248e9f'
+api_id = '*******'
+api_hash = '*****'
 
 # User ID of the recipient
-user_id = 'edi_me'
+user_id = '*****'
 
 # Message to send
-message = 'i am ekansh'
+message = 'i am back'
 
 # Create a TelegramClient instance
 client = TelegramClient('session_name', api_id, api_hash)
